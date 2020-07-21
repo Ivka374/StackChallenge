@@ -16,8 +16,8 @@ public class Main {
         Stack<Character> characterStack = new Stack<>();
         boolean isPalindrome = false;
 
-        String merge = string.replaceAll("\\p{P}", "");      //look for other ways as well
-        merge = merge.replaceAll("\\s", "");                 //works well though
+        String merge = string.replaceAll("\\p{P}", "");
+        merge = merge.replaceAll("\\s", "");
         merge = merge.toLowerCase();
 
         for (int i = 0; i < merge.length()/2; i++){    //adds the first half to the stack
